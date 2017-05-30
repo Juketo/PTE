@@ -39,3 +39,12 @@ npm install --save express-validator
 
 
 npm install socket.io --save
+
+-----------------
+
+base: Nodejs caps 1 ao 3
+https://github.com/Juketo/Nodejs/commit/df8f72dd0e67dc3e15cf071602adc4e8646744cc
+git init    
+git clone `URLTORepository`
+cd `into your cloned folder`
+git checkout commithash
