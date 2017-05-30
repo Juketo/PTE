@@ -1,5 +1,41 @@
+* Git
+
 git init
-// git add .
-// git commit -m "first commit"
+git add .
+git commit -m "Initializing"
 git remote add origin https://github.com/Juketo/PTE.git
 git push -u origin master
+--------- wip -------------
+* Nodejs
+
+// criar diretório
+npm init 
+
+npm install --save express
+
+// para baixar uma aplicação base
+npm install ejs --save
+
+// nodemon para autoupdate alterações do server
+npm install -g nodemon
+
+// install mySQL 
+npm install mysql --save
+
+// Para evitar ter vários ‘requires’ espalhados pela aplicação, usa-se carregamento automático das módulos através da lib express-load
+npm install express-load --save
+
+// lib que ajuda no carregamento das rotas, é o sucessor do express_load
+npm install --save consign
+-> Rotas são as configurações que criamos para cada url específica que queremos atender no nosso sistema server-side implementado em javascript.
+
+// express precisa de ajuda de um parser para pegar valores passados no form (body)
+// para ensinar a receber JSON
+npm install --save body-parser
+
+// validação de formulário no server
+// para poder usar asserts
+npm install --save express-validator
+
+
+npm install socket.io --save
