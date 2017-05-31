@@ -11,6 +11,8 @@ module.exports = function()
 
     app.use(bodyParser.urlencoded({extended: true}));
 
+    // Para evitar ter vários ‘requires’ espalhados pela aplicação, usa-se
+    // carregamento automático das módulos através da lib express-load
     load('routes', { cwd: 'app'})
         .then('infra')
         .into(app);
