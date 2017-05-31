@@ -44,7 +44,23 @@ npm install socket.io --save
 
 base: Nodejs caps 1 ao 3
 https://github.com/Juketo/Nodejs/commit/df8f72dd0e67dc3e15cf071602adc4e8646744cc
+
 git init    
-git clone `URLTORepository`
+git clone https://github.com/Juketo/Nodejs/
 cd `into your cloned folder`
-git checkout commithash
+git checkout df8f72dd0e67dc3e15cf071602adc4e8646744cc
+
+// para pegar atualizado
+cd `into your cloned folder`
+git pull origin master
+
+TODO:
+o que é e pq estão .ejs?
+fazer script de criação dos DBs
+procurar no curso onde é a parte de edit um item
+procurar como deletar um item
+fazer arquivo da view de cada um (form e lista)
+fazer arquivo DAO de cada um
+
+dar uma olhada por cima nos arquivos e no curso Advanced
+talvez fazer o mesmo para o de Angular
