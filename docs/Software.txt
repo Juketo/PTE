@@ -1,0 +1,87 @@
+Software
+
+
+0.1 - Cadastro de Questions Genéricas
+
+Cadastrar Source, esta podendo ser um site (com link) ou não
+Cadastrar tries com suas questions e score
+Listar tries com score
+Ranking by nível e score
+
+DB Sources: id, Name, URL?
+
+DB Questions: id, idSource, tipoTry, título?, link, nível?
+*tipoTry = Enum Reading, listening, writing ou speaking
+** subTipo = 11 tipoDeReading, 21 Tipo de Listening, etc
+
+DB Answers: id, idQuestion, tipo, nº acertos, total, Data
+
+.00: servidor?
+.01: criar JSON Question file local
+.02: ler JSON Question file local
+.03: editar JSON Question file local
+.04: remover JSON Question file local
+.05: bootstrap?
+.06: anwsers
+.07: sources
+
+------------------------------------
+
+0.2 - Writing PTE Essay Scheme
+Preencher o que falta
+0) 90% vem preenchido
+1) 75% vem preenchido
+2) 50% vem preenchido
+3) 25% vem preenchido
+4) 0% vem preenchido
+Varia o auto-preenchimento
+Ranking por tipo
+
+DB EssayScheme: id, listHitsIds, TipoPreenchimento, Data
+* TipoPreenchimento = Enum 90, 75%, etc
+* Score: identifica se a maioria (gravadas) é acertos ou erros, e depois lista(id:enum)
+
+------------------------------------
+
+0.21 - Unique Essay Field
+5) 0% mostrando único textField
+Ranking Incorretas mais vezes
+
+------------------------------------
+
+0.3 - Listar tries de uma fonte via regex
+
+Ex: http://learnenglishteens.britishcouncil.org/skills/listening-skills-practice
+
+Avisar se fez ou não, bem como maior score
+
+------------------------------------
+
+0.4 - Tips
+Identificar os tipos e mostrar dicas dentro dos exercícios, baseado neles, quando for cadastrar
+
+------------------------------------
+
+0.5 - Ranking de desempenho por tempo (dia, semana, mês) --> tela inicial
+
+------------------------------------
+
+y.y Calendar na index ---- talvez é perda de tempo... o que mais colocaria além de início de uso do site pago?
+Mostraria metas do dia, e dos próximos dias
+daria para dar check
+
+------------------------------------
+
+x.x Cadastrar question manual????????????? talvez não seja mais o foco fazer tipo o IELTS_Software
+
+DB Manual_Tries: id, idSource, Questao, Tipo, resposta
+*tipoTry = Enum Reading, listening, writing ou speaking
+
+----------------------
+
+Offline
+
+npm install -g http-server
+cd ~/Documents/art/workspace/ceep-pwa // seleciona a pasta
+http-server // vai rodar a pasta na porta 8080
+https://github.com/alura-cursos/ceep-pwa/archive/0.1.zip // link do projeto no momento

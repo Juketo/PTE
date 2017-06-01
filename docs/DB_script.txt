@@ -26,9 +26,6 @@ CREATE TABLE Questions
 insert into Questions(idSource, url, skill, title, level)
 values (0, 'http://learnenglishteens.britishcouncil.org/skills/reading-skills-practice/adventure-travel', 0, 'Adventure travel', 3);
 
-DB Answers: id, idQuestion, tipo, nº acertos, total, Data
-
-
 CREATE TABLE Answers 
 (
   id int(3) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -42,3 +39,14 @@ CREATE TABLE Answers
 
 insert into Questions(idQuestion, questionType, corrects, total)
 values (0, 0, 10, 30);
+
+CREATE TABLE EssayScheme 
+(
+  id int(3) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  level int(1) NOT NULL,
+  finished DATETIME DEFAULT CURRENT_TIMESTAMP,  
+  listHitsIds string(600) NOT NULL,
+);
+
+insert into Questions(level, listHitsIds)
+values (0, '0,1,2,3,25,67,89,103');
